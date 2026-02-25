@@ -1,0 +1,9 @@
+venv/
+tr/
+clips/
+*.mp3
+*.wav
+*.tar.gz
+*.npy
+*.csv
+.DS_Store
