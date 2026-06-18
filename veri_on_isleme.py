@@ -1,8 +1,7 @@
 import pandas as pd
 import os
 
-# Dosya yolunu tanımlayalım (tr klasörünün içinde olduğunu varsayıyoruz)
-# Eğer tsv dosyası hemen yanındaysa sadece 'validated.tsv' kalsın
+# Dosya yolunu tanımlayalım 
 dosya_yolu = 'tr/validated.tsv' 
 
 if os.path.exists(dosya_yolu):
