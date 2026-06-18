@@ -6,13 +6,11 @@ import os
 # 1. Temiz listeyi yükle
 df = pd.read_csv('temiz_veri_listesi.csv')
 
-# İlk deneme için sadece 1000 tane veriyle çalışalım (Hız için)
-# Her şey yolunda giderse bu satırı silebiliriz
+
 df = df.head(1000)
 
 def feature_extractor(file_path):
-    # Ses dosyasını yükle (clips klasörünün içinde olduğunu belirtiyoruz)
-    # tr/clips/ yolunu kontrol et, sende farklı olabilir
+    # Ses dosyasını yükle 
     full_path = os.path.join('tr', 'clips', file_path)
     
     try:
