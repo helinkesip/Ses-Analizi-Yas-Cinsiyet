@@ -11,7 +11,7 @@ if os.path.exists(dosya_yolu):
     # Cinsiyet ve Yaş dolu olanları filtrele
     df_temiz = df.dropna(subset=['gender', 'age'])
     
-    # Sadece gerekli sütunları ve ilk 5000 örneği alalım (Hız için başta küçük tutabiliriz)
+    # Sadece gerekli sütunları ve ilk 5000 örneği alalım 
     df_final = df_temiz[['path', 'age', 'gender']]
     
     print(f"Filtrelenmiş (Etiketli) kayıt sayısı: {len(df_final)}")
